@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
+import { Navbar } from 'react-bootstrap';
+import { TopNav } from './Components/TopNav';
 
 
 
@@ -11,7 +13,7 @@ import Contact from './Contact';
 function App() {
   return (
     <BrowserRouter>
-   
+   <TopNav></TopNav>
       <nav>
         <Link to="/">Home</Link> |{" "}
         <Link to="/about">About</Link> |{" "}

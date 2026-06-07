@@ -4,6 +4,9 @@ import About from './About';
 import Contact from './Contact';
 import { Navbar } from 'react-bootstrap';
 import { TopNav } from './Components/TopNav';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Content from './Components/Content';
 
 
 
@@ -13,7 +16,9 @@ import { TopNav } from './Components/TopNav';
 function App() {
   return (
     <BrowserRouter>
+    <Header/>
    <TopNav></TopNav>
+   <Content/>
       <nav>
         <Link to="/">Home</Link> |{" "}
         <Link to="/about">About</Link> |{" "}
@@ -27,6 +32,7 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
        
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }

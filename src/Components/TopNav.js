@@ -1,35 +1,42 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 
 export const TopNav = () => {
- 
+ const location = useLocation();
 
   return (
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <div class="container-fluid">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">
-              Active
-            </a>
+    <>
+    <nav  className="navbar navbar-expand-sm bg-dark navbar-dark mb-4">
+      <div className="container-fluid">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <Link
+              className={`nav-link ${location.pathname === "/" ? "active" : ""}`}
+              to="/"
+            >
+              Home
+            </Link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              Link
-            </a>
+          <li className="nav-item">
+            <Link
+              className={`nav-link ${location.pathname === "/about" ? "active" : ""}`}
+              to="/about"
+            >
+              About
+            </Link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              Link
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">
-              Disabled
-            </a>
+          <li className="nav-item">
+            <Link
+              className={`nav-link ${location.pathname === "/contact" ? "active" : ""}`}
+              to="/contact"
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
     </nav>
+</>
   );
 };

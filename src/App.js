@@ -15,24 +15,17 @@ import Content from './Components/Content';
 
 function App() {
   return (
-    <BrowserRouter>
-    <Header/>
-   <TopNav></TopNav>
-   <Content/>
-      <nav>
-        <Link to="/">Home</Link> |{" "}
-        <Link to="/about">About</Link> |{" "}
-        <Link to="/contact">Contact</Link>
-      </nav>
+     <BrowserRouter>
+      <Header />
+      <TopNav />
 
- 
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact/>}/>
-       
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer/>
+
+      <Footer />
     </BrowserRouter>
   );
 }

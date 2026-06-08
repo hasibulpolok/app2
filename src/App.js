@@ -15,8 +15,9 @@ import Footer from './Components/Footer';
 function App() {
   return (
      <BrowserRouter>
-      <Header />
+      
       <TopNav />
+      <Header />
 
       <Routes>
         <Route path="/" element={<Home />} />

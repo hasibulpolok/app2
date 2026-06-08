@@ -2,11 +2,10 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
-import { Navbar } from 'react-bootstrap';
 import { TopNav } from './Components/TopNav';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import Content from './Components/Content';
+
 
 
 

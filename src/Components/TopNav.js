@@ -34,6 +34,22 @@ export const TopNav = () => {
               Contact
             </Link>
           </li>
+          <li className="nav-item">
+            <Link
+              className={`nav-link ${location.pathname === "/props" ? "active" : ""}`}
+              to="/props"
+            >
+              Props
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              className={`nav-link ${location.pathname === "/props" ? "active" : ""}`}
+              to="/events"
+            >
+              Events
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

@@ -1,6 +1,7 @@
+import React from 'react'
 import { Container, Row, Col, Card } from "react-bootstrap";
 
-function About() {
+export const About = () => {
   return (
     <Container className="py-5">
       <Row className="justify-content-center">
@@ -59,8 +60,7 @@ function About() {
         </Col>
       </Row>
     </Container>
-  );
+  )
 }
 
-export default About;
 

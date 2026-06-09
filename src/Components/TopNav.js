@@ -50,6 +50,14 @@ export const TopNav = () => {
               Events
             </Link>
           </li>
+          <li className="nav-item">
+            <Link
+              className={`nav-link ${location.pathname === "/list" ? "active" : ""}`}
+              to="/list"
+            >
+              List
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

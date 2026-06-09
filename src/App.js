@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import { About } from './pages/About';
 import NewProps from './pages/NewProps';
 import Events from './pages/Events';
+import List from './Components/LIst';
 
 
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/contact" element={<Contact/>} /> 
        <Route path="/props" element={<NewProps/>}/>
        <Route path="/events" element={<Events/>}/>
+       <Route path="/list" element={<List/>}/>
       </Routes>
 
       <Footer />

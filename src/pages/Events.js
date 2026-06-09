@@ -11,9 +11,9 @@ export default function Events() {
       <div className="mb-2">Events</div>
       <button onClick={() => shoot("Goal!")}>Click Me</button> 
       <br />
-      {(Today == "Tuesday" ? "Office is open" : "Office is closed")}; 
+      {(Today === "Tuesday" ? "Office is open" : "Office is closed")}; 
       <br />
-      {Today == "Friday" && "Office is closed"}
+  
     </div>
   );
 }

@@ -8,6 +8,9 @@ import { About } from './pages/About';
 import NewProps from './pages/NewProps';
 import Events from './pages/Events';
 import List from './Components/LIst';
+import Form from './Components/Form';
+import MultiForm from './Components/MultiForm';
+import NewForm from './Components/NewForm';
 
 
 
@@ -33,6 +36,9 @@ function App() {
        <Route path="/props" element={<NewProps/>}/>
        <Route path="/events" element={<Events/>}/>
        <Route path="/list" element={<List/>}/>
+       <Route path="/form" element={<Form/>}/>
+       <Route path="/multiform" element={<MultiForm/>}/>
+       <Route path="/newform" element={<NewForm/>}/>
       </Routes>
 
       <Footer />

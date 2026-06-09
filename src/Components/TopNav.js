@@ -58,6 +58,28 @@ export const TopNav = () => {
               List
             </Link>
           </li>
+          <li className="nav-item">
+            <Link
+              className={`nav-link ${location.pathname === "/form" ? "active" : ""}`}
+              to="/form"
+            >
+              Form
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              className={`nav-link ${location.pathname === "/multiform" ? "active" : ""}`}
+              to="/multiform"
+            >
+              MultiForm
+            </Link>
+            <Link
+              className={`nav-link ${location.pathname === "/newform" ? "active" : ""}`}
+              to="/newform"
+            >
+              Newform
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

@@ -6,7 +6,7 @@ export default function NewProps() {
   const { name, age } = person;
 
   return (
-    <div>
+    <div className='container-fluid '>
       <p>Name : {name}</p> 
       <p>Age : {age}</p>
     </div>

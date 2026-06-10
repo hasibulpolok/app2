@@ -11,6 +11,7 @@ import List from './Components/LIst';
 import Form from './Components/Form';
 import MultiForm from './Components/MultiForm';
 import NewForm from './Components/NewForm';
+import DisplayData from './pages/DisplayData';
 
 
 
@@ -39,6 +40,7 @@ function App() {
        <Route path="/form" element={<Form/>}/>
        <Route path="/multiform" element={<MultiForm/>}/>
        <Route path="/newform" element={<NewForm/>}/>
+       <Route path="/displaydata" element={<DisplayData/>}/>
       </Routes>
 
       <Footer />

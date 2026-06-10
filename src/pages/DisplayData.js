@@ -1,0 +1,27 @@
+import React, { useEffect, useState } from "react";
+
+export default function DisplayData() {
+  const [datas, setDatas] = useState([]);
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((res) => res.json())
+      .then((data) => setDatas(data))
+      
+  }, []);
+
+  return (
+    <div className="container-fluid">
+      <h2 className="display-2 text-primary">
+        Displaying Data From API
+      </h2>
+
+      {datas.map((data) => (
+        <div key={data.id}>
+          <h4>{data.title}</h4>
+          <p>{data.body}</p>
+        </div>
+      ))}
+    </div>
+  );
+}       

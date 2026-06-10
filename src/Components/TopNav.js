@@ -79,6 +79,12 @@ export const TopNav = () => {
             >
               Newform
             </Link>
+            <Link
+              className={`nav-link ${location.pathname === "/displaydata" ? "active" : ""}`}
+              to="/displaydata"
+            >
+              DisplayData
+            </Link>
           </li>
         </ul>
       </div>

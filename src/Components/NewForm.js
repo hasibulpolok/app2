@@ -17,6 +17,8 @@ export default function NewForm() {
      <form action=""></form>
    Name : <input width={100} type="text" name="fullname"  value={input.fullname} onChange={handlechange}/> <br /> <br />
    address:  <input  type="text" name="address" value={input.address} onChange={handlechange}/>
+    Address 2:
+        <textarea name="address2" value={input.address2} onChange={handlechange} />
   </div>
    
    </>

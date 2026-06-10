@@ -20,9 +20,7 @@ export default function MultiForm() {
 
     console.log("Form Data:", inputs);
 
-    alert(
-      `Name: ${inputs.name}\nID: ${inputs.id}`
-    );
+   
   }
 
   return (

@@ -73,17 +73,29 @@ export const TopNav = () => {
             >
               MultiForm
             </Link>
+            </li>
+            <li>
             <Link
               className={`nav-link ${location.pathname === "/newform" ? "active" : ""}`}
               to="/newform"
             >
               Newform
             </Link>
+            </li>
+            <li>
             <Link
               className={`nav-link ${location.pathname === "/displaydata" ? "active" : ""}`}
               to="/displaydata"
             >
               DisplayData
+            </Link>
+            </li>
+            <li>
+            <Link
+              className={`nav-link ${location.pathname === "/displaydata" ? "active" : ""}`}
+              to="/axiosdata"
+            >
+              AxiosData
             </Link>
           </li>
         </ul>

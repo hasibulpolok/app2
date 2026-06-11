@@ -4,10 +4,17 @@ include "dbconfig.php";
 
 $data = json_decode(file_get_contents("php://input"), true);
 
+if (!$data) {
+    echo json_encode(["message" => "Invalid JSON"]);
+    exit;
+}
+
 $name     = $data['fullname'];
 $gender   = $data['gender'];
 $district = $data['district'];
 $address  = $data['address2'];
+
+
 
 
 

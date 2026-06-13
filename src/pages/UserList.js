@@ -27,8 +27,8 @@ export default function UserList() {
             </thead>
 
             <tbody>
-              {users.map((user) => (
-                <tr>
+              {users.map((user,index) => (
+                <tr key={index}>
                   <td>{user.id}</td>
                   <td>{user.name}</td>
                   <td>{user.address}</td>

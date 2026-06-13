@@ -13,14 +13,7 @@ import MultiForm from './Components/MultiForm';
 import NewForm from './Components/NewForm';
 import DisplayData from './pages/DisplayData';
 import AxiosData from './pages/AxiosData';
-
-
-
-
-
-
-
-
+import UserList from './pages/UserList';
 
 
 
@@ -43,6 +36,7 @@ function App() {
        <Route path="/newform" element={<NewForm/>}/>
        <Route path="/displaydata" element={<DisplayData/>}/>
        <Route path="/axiosdata" element={<AxiosData/>}/>
+       <Route path="/userlist" element={<UserList/>}/>
       </Routes>
 
       <Footer />

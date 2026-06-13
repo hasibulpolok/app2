@@ -98,6 +98,14 @@ export const TopNav = () => {
               AxiosData
             </Link>
           </li>
+            <li>
+            <Link
+              className={`nav-link ${location.pathname === "/userlist" ? "active" : ""}`}
+              to="/userlist"
+            >
+              UserList
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

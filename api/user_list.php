@@ -9,5 +9,5 @@ while ($raw = $sql->fetch_assoc()) {
     $records[] = $raw;
 }
 
-echo json_encode([$records]);
+echo json_encode(['mydata' => $records]);
 ?>
